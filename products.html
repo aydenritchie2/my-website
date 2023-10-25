@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Products</title>
+    <link rel="stylesheet" href="css/myStyles.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="img/logo.png" alt="home logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="checkout.html">Check Out</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>   
+    </nav>
+    <main>
+        <section>
+            <h1>Game Products</h1>
+            <p>Choose from our wide selection of games and start playing today!</p>
+            <table>
+                <tr>
+                    <th>Game</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Mario Kart Deluxe</td>
+                    <td><img src="img/mario-kart.jpg" alt="Mario Kart Deluxe" height="150" width="200"></td>
+                    <td>$49.99</td>
+                    <td><button onclick="addToCart('Mario Kart Deluxe', 49.99)">Add to Cart</button></td>
+                  </tr>
+                  <tr>
+                    <td>The Legend of Zelda: Breath of the Wild</td>
+                    <td><img src="img/zelda-breath-of-the-wild.jpg" alt="Zelda: Breath of the Wild" height="150" width="200"></td>
+                    <td>$59.99</td>
+                    <td><button onclick="addToCart('The Legend of Zelda: Breath of the Wild', 59.99)">Add to Cart</button></td>
+                  </tr>
+                              </table>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Chisholm
+            <a href="sitemap.html">Sitemap</a>
+        </p>
+    </footer>
+    <script>
+        // Define an array to store the cart items
+        var cartItems = [];
+      
+        // Function to add an item to the cart
+        function addToCart(productName, price) {
+          // Create an object representing the added item
+          var item = {
+            name: productName,
+            price: price
+          };
+      
+          // Add the item to the cartItems array
+          cartItems.push(item);
+      
+          // Display a confirmation message to the user
+          alert(productName + " added to cart!");
+      
+
+        }
+      </script>
+      
+</body>
+</html>

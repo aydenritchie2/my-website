@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/myStyles.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html"><img src="img/logo.png" alt="home logo"> </a> </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="checkout.html">Check Out</a>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>   
+    </nav>
+    <main>
+        <h1>Checkout Page</h1>
+        <p>Please fill out the following form to complete your purchase:</p>
+        
+        <form id="checkoutForm">
+            <label for="products">Select products:</label>
+            <br>
+            <select id="products" name="products[]" multiple>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">Item 3</option>
+            </select>
+            
+            <br>
+            <button type="submit">Purchase</button>
+        </form>
+    </main>
+    
+    
+    <footer>
+        <p>
+            &copy; Chisholm
+            <a href="sitemap.html">Sitemap</a>
+        </p>
+    </footer>
+</body>
+</html>
